@@ -1,7 +1,7 @@
 ---
 - name: "Pull Master Branch of workadventure"
   git:
-    repo: "https://github.com/thecodingmachine/workadventure"
+    repo: "https://github.com/hhl88/workadventure"
     dest: "/opt/workadventure"
 
 - name: "Create workadventure dir"

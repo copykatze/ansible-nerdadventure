@@ -3,9 +3,9 @@
   gather_facts: true
   become: true
   vars:
-    workadventure_domain: "workadventure.localhost"
-    workadventure_start_room: "/_/global/raw.githubusercontent.com/raumzeitlabor/rc3-map-lounge/main/main.json"
-    jitsi_url: "meet.jit.si"
+    workadventure_domain: "nerdadventure.de"
+    workadventure_start_room: "/_/global/copykatze.github.io/wa-nerdadventure/maps/silpion_2og.json"
+    jitsi_url: "jitsi.1533.eu"
     jitsi_private_mode: False
     skip_full_upgrade: True
     ansible_become_pass: "{{ local_become_pass }}"
@@ -14,7 +14,7 @@
     - include_role:
         name: user_setup
       loop:
-        - "{{ users.<your-user> }}"
+        - "{{ users.admin }}"
 
     - include_role:
         name: generic_setup
@@ -35,4 +35,3 @@
         name: workadventure_setup
       tags:
         - product
-
