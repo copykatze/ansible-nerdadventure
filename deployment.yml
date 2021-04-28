@@ -3,7 +3,7 @@
   gather_facts: true
   become: true
   vars:
-    workadventure_domain: "nerdadventure.de"
+    workadventure_domain: "workadventure.nerdadventure.de"
     workadventure_start_room: "/_/global/copykatze.github.io/wa-nerdadventure/maps/silpion_2og.json"
     jitsi_url: "jitsi.1533.eu"
     jitsi_private_mode: False
